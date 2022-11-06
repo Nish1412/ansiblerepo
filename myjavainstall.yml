@@ -1,0 +1,16 @@
+---
+- hosts: webserverhosts
+  become: yes
+  tasks:
+          - name: i want to install java 8 on ubuntu
+            apt:
+                name: java 8
+                state: present
+            when: ansible_os_family=="Debian"
+
+
+          - name: i want to install java 8 on RedHat
+            yum:
+                  name: java 8
+                  state: present
+            when: ansible_os_family=="RedHat"        
