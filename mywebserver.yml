@@ -5,6 +5,6 @@
        - name: i want to install tree 
          apt: 
              name: tree 
-             stste: present 
+             state: present 
 
 
