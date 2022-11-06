@@ -1,5 +1,5 @@
 ---
-- hosts: webserverhosts
+- hosts: 172.31.16.82
   become: yes
   tasks:
           - name: i want to install java 8 on ubuntu
