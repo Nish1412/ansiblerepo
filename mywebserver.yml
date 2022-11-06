@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: 
+  tasks:
+       - name: i want to install tree 
+         apt: 
+             name: tree 
+             stste: present 
+
+
